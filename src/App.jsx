@@ -1,0 +1,15 @@
+import Todo from "./components/Todo"
+import { TasksProvider } from "./context/TasksContext"
+
+
+const App = () => {
+  console.log('App')
+
+  return (
+    <TasksProvider>
+      <Todo />
+    </TasksProvider> 
+  )
+}
+
+export default App
